@@ -48,12 +48,10 @@ public class GitLab implements EntryPoint {
 
 			@Override
 			public void onSuccess(List<IUser> result) {
-				Window.alert("Got list back with " +  result.size() + " entries");
-				
+				displayUsers(result);
 			}
-		});
-	}
-	
+		}); 
+	}	
 	
 	/**
 	 * Used to display users 
@@ -92,5 +90,9 @@ public class GitLab implements EntryPoint {
 			
 			flexTable.setText(i+1,3,String.valueOf(user.getWishList().size()));
 		}
+	}
+	
+	//a method that does nothing 
+	public void doNothing() {
 	}
 }
