@@ -91,9 +91,4 @@ public class GitLab implements EntryPoint {
 			flexTable.setText(i+1,3,String.valueOf(user.getWishList().size()));
 		}
 	}
-	
-	//a method that does nothing 
-	public void doNothing() {
-		"i made some errors"
-	}
 }
